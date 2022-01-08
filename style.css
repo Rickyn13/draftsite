@@ -1,0 +1,350 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: #1b2727;
+color: #d5dddf;
+font-family: monospace;
+font-size: 18px;
+}  
+
+h2{
+  font-size: 32px;
+}
+
+/* The navigation bar */
+.navbar {
+  overflow: hidden;
+  background-color: black;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+  z-index:1;
+  border-style: solid;
+  border-color:  grey;
+  border-width: 0.2px;
+}
+
+/* Links inside the navbar */
+.navbar a {
+  float: right;
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  color: white;
+}
+
+/* Change background on mouse-over */
+.navbar a:hover {
+  background: #ddd;
+  color: black;
+}
+
+/* Main content */
+.main {
+  margin-top: 45px; /* Add a top margin to avoid content overlay */
+  margin-left: 0;
+  margin-right: 0%;
+  width: 100%;
+}
+
+
+/* The hero image */
+.hero-image {
+/* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("Background.jpeg");
+
+/* Set a specific height */
+height: 50%;
+
+/* Position and center the image to scale nicely on all screens */
+background-position: center;
+background-repeat: no-repeat;
+background-size: inherit;
+position: relative;
+}
+
+/* Place text in the middle of the image */
+.hero-text {
+text-align: center;
+position: absolute;
+top: 45%;
+left: 50%;
+transform: translate(-50%, -50%);
+
+}
+
+.hero-text-left {
+text-align: center;
+font-size: large;
+margin-top: 40;
+
+}
+.hero-text-right {
+  text-align: right;
+  font-size: large;
+
+  
+  }
+
+  
+.about{
+  text-align: center;
+  padding-top: 25px;
+  padding-right: 25%;
+  padding-left: 25%;
+  padding-bottom: 50;
+  font-size: 20px;
+ 
+}
+
+.roadmap{
+  text-align: center;
+  padding-right: 10%;
+  padding-left: 10%;
+  
+  padding-top: 0;
+  padding-bottom: 50;
+  
+}
+
+.roadmap h2{
+margin-top: 0;
+
+}
+
+.stage1{
+  text-align: center;
+  padding-right: 25%;
+  padding-left: 25%;
+  border-style: solid;
+  border-width: 5px;
+  padding-top: 10px;
+  border-color: black;
+  border-radius: 75px;
+  background: #1b2727;
+
+}
+.stage2{
+  text-align: center;
+  padding-right: 25%;
+  padding-left: 25%;
+  border-style: solid;
+  border-width: 5px;
+  padding-top: 10px;
+  border-color: black;
+  border-radius: 75px;
+  background: #1b2727;
+
+}
+.stage3{
+  text-align: center;
+  padding-right: 25%;
+  padding-left: 25%;
+  border-style: solid;
+  border-width: 5px;
+  padding-top: 10px;
+  border-color: black;
+  border-radius: 75px;
+  background: #1b2727;
+
+}
+.stage4{
+  text-align: center;
+  padding-right: 25%;
+  padding-left: 25%;
+  border-style: solid;
+  border-width: 5px;
+  padding-top: 10px;
+  border-color: black;
+  border-radius: 75px;
+  background: #1b2727;
+
+}
+.great-sszard{
+  margin-top: 40;
+  margin-left: 10%;
+  margin-right: 10%;
+  text-align: center;
+  padding-right: 10%;
+  padding-left: 10%;
+  padding-top: 0;
+  
+ 
+  
+}
+
+.content-gs{
+ margin-top: 40;
+  margin-left: 10%;
+  margin-right: 10%;
+  text-align: center;
+  padding-right: 10%;
+  padding-left: 10%;
+  padding-top: 0;
+  border-style: solid;
+  border-color: black;
+  border-radius: 75px;
+  border-width: 5px;
+  margin-bottom: 50;
+}
+
+.collection{
+  text-align: center;
+  padding-right: 10%;
+  padding-left: 10%;
+  
+  padding-bottom: 50;
+  
+}
+
+.content-header{
+  text-align: center;
+  padding-right: 10%;
+  padding-left: 10%;
+  
+  padding-top: 0;
+  padding-bottom: 50;
+  
+}
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 25%;
+  padding: 5px;
+  text-align: center;
+  padding-right: 25%;
+  padding-left: 25%;
+}
+
+.team{
+  text-align: center;
+  padding-right: 10%;
+  padding-left: 10%;
+  
+  padding-top: 0;
+  padding-bottom: 50;
+
+}
+.team-row {
+  display: flex;
+}
+
+.team-column {
+  flex: 20%;
+  padding: 5px;
+  width: 75%;
+  padding-bottom: 50;
+}
+
+.team-row h3{
+
+  text-align: center;
+  
+}
+
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+  background-color: #3c5148;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  border-width: 1px;
+  border-style: solid;
+  margin-top: 50;
+  
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+  background-color: black;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  padding: 0 18px;
+  background-color: black;
+  display: none;
+  overflow: hidden;
+  color: white; border-width: 1px;
+  border-style: dotted;
+}
+.faq h2{
+
+  text-align: center;
+  padding-right: 10%;
+  padding-left: 10%;
+  
+  padding-top: 0;
+  padding-bottom: 20;
+}
+.accordion:after {
+  content: '\02795'; /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: white;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+
+.hls-card{
+  margin-top: 40;
+  margin-left: 10%;
+  margin-right: 10%;
+  text-align: center;
+  padding-right: 10%;
+  padding-left: 10%;
+  padding-top: 0;
+ 
+  
+}
+
+.content-card{
+  margin-top: 40;
+   margin-left: 10%;
+   margin-right: 10%;
+   text-align: center;
+   padding-right: 10%;
+   padding-left: 10%;
+   padding-top: 0;
+   border-style: solid;
+   border-color: black;
+   border-radius: 75px;
+   border-width: 5px;
+   margin-bottom: 150;
+ }
+
+ .border{
+ border-style: groove;
+ border-color: white;
+ border-width: 3px;
+ margin-bottom: 40;
+ margin-top: 40;
+ margin-left: 10%;
+ margin-right: 10%;
+ text-align: center;
+ padding-right: 10%;
+ padding-left: 10%;
+ padding-top: 0;
+ 
+
+ }
+ footer {
+  text-align: center;
+  padding: 3px;
+  background-color: black;
+  color: d5dddf;
+margin-top: 70;
+border-width: 1px;
+font-size: 14px;
+ }
